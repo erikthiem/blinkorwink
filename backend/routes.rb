@@ -7,3 +7,6 @@ get '/' do
     send_file File.expand_path('index.html', '../frontend/')
 end
 
+get '/helloworld' do
+    "Hello World" 
+end
