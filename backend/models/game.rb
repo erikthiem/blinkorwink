@@ -3,6 +3,8 @@ class Game
 
     property :id, Serial
 
-    property :code, String
+    property :code, String, :unique => true
     property :number_players, Integer
+
+    has n, :players
 end

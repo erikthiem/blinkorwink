@@ -9,8 +9,8 @@ configure :production do
 	DataMapper::setup(:default, ENV['DATABASE_URL'])
 end
 
-
-
 require_relative 'models/game.rb'
+require_relative 'models/player.rb'
+
 DataMapper.finalize
 DataMapper.auto_upgrade!

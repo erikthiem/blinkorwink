@@ -22,5 +22,5 @@ def create_item(item)
 end
 
 
-
 require_relative "routes/game.rb"
+require_relative "routes/player.rb"
