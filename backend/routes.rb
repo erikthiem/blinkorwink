@@ -8,8 +8,19 @@ get '/' do
     send_file File.expand_path('index.html', 'frontend/')
 end
 
-get '/helloworld' do
-    "Hello World" 
+
+def create_item(item)
+
+    saveSuccessful = item.save
+
+    if saveSuccessful then
+        response.status = STATUS_CREATED
+        return item.to_json
+    else
+        response.status = STATUS_BAD_REQUEST
+    end
 end
+
+
 
 require_relative "routes/game.rb"
