@@ -1,2 +1,4 @@
 *.swp
 *.db
+node_modules/
+frontend/css/*.css
