@@ -8,6 +8,10 @@ gulp.task('default',function() {
     gulp.watch('frontend/sass/**/*.scss', ['styles']);
 });
 
+gulp.task('deploy',function() {
+    gulp.start('styles');
+});
+
 gulp.task('styles', function() {
     
     var scssStream = gulp.src('frontend/sass/**/*.scss')
