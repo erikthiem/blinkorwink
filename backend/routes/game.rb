@@ -12,8 +12,7 @@ end
 post API_PATH + '/games' do
 
     game_code = generateGameCode()
-    number_players = 0
 
-    game = Game.create(:code => game_code, :number_players => number_players)
+    game = Game.create(:code => game_code)
     create_item(game)
 end
