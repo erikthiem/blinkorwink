@@ -1,5 +1,5 @@
 # Get all players
-get '/players' do
+get API_PATH + '/players' do
     players = Player.all
     return players.to_json
 end
@@ -19,7 +19,7 @@ def addNewPlayerToGame(game)
 end
 
 # Create a new player
-post '/players' do
+post API_PATH + '/players' do
 
     associated_game_code = params[:game_code]
 
