@@ -1,6 +1,6 @@
 var apiBaseUrl = "http://localhost:9393"
 
-var apiBaseUrl = ""
+var apiBaseUrl = "/api"
 
 var vueApp = new Vue({
     
