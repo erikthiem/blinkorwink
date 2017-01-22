@@ -1,5 +1,5 @@
 # Get all games
-get '/games' do
+get API_PATH + '/games' do
     games = Game.all
     return games.to_json
 end
@@ -9,11 +9,10 @@ def generateGameCode()
 end
 
 # Create a new game
-post '/games' do
+post API_PATH + '/games' do
 
     game_code = generateGameCode()
-    number_players = 0
 
-    game = Game.create(:code => game_code, :number_players => number_players)
+    game = Game.create(:code => game_code)
     create_item(game)
 end

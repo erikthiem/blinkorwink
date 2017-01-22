@@ -1,6 +1,8 @@
 require_relative "status_codes.rb"
 require 'json'
 
+API_PATH = '/api'
+
 set :public_folder, File.dirname(__FILE__) + '/../frontend/'
 
 get '/' do
