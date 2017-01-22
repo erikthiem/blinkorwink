@@ -4,7 +4,7 @@ var vueApp = new Vue({
     
     el: '#vueApp',
     data: {
-
+        game_code: ""
     },
 
     mounted: function() {
