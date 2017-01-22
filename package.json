@@ -1,0 +1,16 @@
+{
+  "name": "blinkorwink",
+  "version": "1.0.0",
+  "description": "Blink or Wink",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^2.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^3.1.0",
+    "merge-stream": "^1.0.1"
+  },
+  "scripts": {
+    "postinstall": "gulp deploy"
+  }
+}
