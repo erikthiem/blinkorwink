@@ -13,3 +13,4 @@ options "*" do
 end
 
 require_relative 'routes.rb'
+require_relative 'models.rb'
