@@ -21,9 +21,10 @@ var vueApp = new Vue({
 			$.ajax({
                 url: apiBaseUrl + "/games",
                 contentType: "application/json",
+                dataType: "json",
                 method: "POST",
                 success: function(data) {
-                    console.log(data);
+                    self.game_code = data.code;
                 },
                 error: function(error) {
                     console.log(error);
