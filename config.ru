@@ -1,2 +1,2 @@
-require './backend/app'
+require './app'
 run Sinatra::Application
